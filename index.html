@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE_01 - BOOTSTRAP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: #f8f8d9">
+    <div class="container">
+        <div>
+            <form class="login-form">
+                <div class="mb-3 row">
+                    <h3 style="color: blue;">Cadastro de usuário</h3>
+                    <br>
+                    <br>
+                    <hr>
+                </div>
+                
+                <div class="container">
+                    <div class="row">
+                      <div class="col">
+                            <div id="tipo">
+                                <fieldset class="border rounded-3 p-3">
+                                    <legend  class="float-none w-auto px-3">Tipo</legend>
+                                    <div>
+                                        <select class="form-select w-25" aria-label="Default select example">
+                                            <option selected></option>
+                                            <option value="1">Brasileiro</option>
+                                            <option value="2">Estrangeiro</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <div class="row">
+                      <div class="col">
+                            <div id="dadospessoais">
+                                <fieldset class="border rounded-3 p-3 w-100">
+                                    <legend  class="float-none w-auto px-3">Dados Pessoais</legend>
+                                    <div>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label>Nome:*</label>
+                                                <div>
+                                                    <input class="w-100" required>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Sexo:</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">Feminino</label>
+                                                </div>
+                                            </div>
+                                            <div nome="DataNascimento" method="GET" class="mb-3">
+                                                <label for="data">Data de Nascimento:</label>
+                                                <div>
+                                                    <input type="date" id="data" name="dataNasci" class="w-50">
+                                                </div>
+                                            </div>                                      
+                                            <div class="mb-3">
+                                                <label>Naturalidade:*</label>
+                                                <select class="form-select w-50" aria-label="Default select example" required>
+                                                    <option selected></option>
+                                                    <option value="1">Viçosa do Ceará</option>
+                                                    <option value="2">Tianguá</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Escolaridade:*</label>
+                                                <select class="form-select w-50" aria-label="Default select example" required>
+                                                    <option selected></option>
+                                                    <option value="1">Superior</option>
+                                                    <option value="2">Técnico</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Nome da Mãe:*</label>
+                                                <div>
+                                                    <input class="w-100" required>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Nome do Pai:</label>
+                                                <div>
+                                                    <input class="w-100">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </fieldset>
+                            </div>
+                      </div>  
+    
+                      <div class="col">
+                            <div id="localidade">
+                                <fieldset class="border rounded-3 p-3 w-100">
+                                    <legend  class="float-none w-auto px-3">Localidade</legend>
+                                    <div>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label>CEP:</label>
+                                                <div>
+                                                    <input class="w-50">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Endereço:*</label>
+                                                <div>
+                                                    <input class="w-100" required>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Complemento:</label>
+                                                <div>
+                                                    <input class="w-100">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Bairro:</label>
+                                                <div>
+                                                    <input class="w-100">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Cidade:</label>
+                                                <div>
+                                                    <input class="w-100">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Unidade Federativa:</label>
+                                                <select class="form-select w-50" aria-label="Default select example">
+                                                    <option selected></option>
+                                                    <option value="1">CE</option>
+                                                    <option value="2">PI</option>
+                                                    <option value="2">MA</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div id="contato">
+                                <fieldset class="border rounded-3 p-3 w-100">
+                                    <legend  class="float-none w-auto px-3">Contato</legend>
+                                    <div>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label>DDD:</label>
+                                                <div>
+                                                    <input class="w-50">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Telefone:</label>
+                                                <div>
+                                                    <input class="w-50">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Celular:</label>
+                                                <div>
+                                                    <input class="w-50">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Fax:</label>
+                                                <div>
+                                                    <input class="w-50">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div id="document">
+                                <fieldset class="border rounded-3 p-3 w-100">
+                                    <legend  class="float-none w-auto px-3">Documentação</legend>
+                                    <div>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label>CPF:*</label>
+                                                <div>
+                                                    <input class="w-50" required>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Identidade:</label>
+                                                <div>
+                                                    <input class="w-50">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Orgão Emissor:</label>
+                                                <div>
+                                                    <input class="w-50">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Unidade Federativa:</label>
+                                                <select class="form-select w-50" aria-label="Default select example">
+                                                    <option selected></option>
+                                                    <option value="1">CE</option>
+                                                    <option value="2">PI</option>
+                                                    <option value="2">MA</option>
+                                                </select>
+                                            </div>
+                                            <div nome="DataEmissao" method="GET" class="mb-3">
+                                                <label for="data">Data de Emissão:</label>
+                                                <div>
+                                                    <input type="date" id="data" name="dataEmiss" class="w-50">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </form>
+        </div>
+    
+        <br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2" type="button">Salvar</button>
+        </div>
+        <br>
+        <br>
+    </div>
+</body>
+</html>
